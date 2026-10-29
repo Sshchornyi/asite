@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 2</title>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #f4f4f8;
+  }
+  h1 { color: #222; }
+  a.button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+  a.button:hover { background: #1d4ed8; }
+  a.back {
+    margin-top: 10px;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+  <h1>Page 2</h1>
+  <p>This is the middle page. Page 3 can only be reached from here.</p>
+  <a class="button" href="page3.html" onclick="sessionStorage.setItem('cameFromPage2', 'true');">Go to Page 3</a>
+  <a class="back" href="page1.html">&larr; Back to Page 1</a>
+</body>
+</html>
