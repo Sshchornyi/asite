@@ -2,10 +2,35 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=page1.html">
-<title>Redirecting...</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #f4f4f8;
+  }
+  h1 { color: #222; }
+  a.button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+  a.button:hover { background: #1d4ed8; }
+</style>
 </head>
 <body>
-  <p>Redirecting to <a href="page1.html">Page 1</a>...</p>
+  <h1>Welcome</h1>
+  <p>This site demonstrates a five-page chain where each page is only reachable by clicking through from the one before it.</p>
+  <a class="button" href="page1.html">Start at Page 1</a>
 </body>
 </html>
